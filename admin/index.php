@@ -23,6 +23,10 @@
     <div class="large-3 columns">
       <form method="post">
           <?php include 'login.php'; ?>
+          <?php
+            $url = $_SERVER['PHP_SELF']."/widget.php";
+            echo "<a href='$url'>Click</a>"
+           ?>
           <input type="text" placeholder="Username" name="user">
           <input type="password" placeholder="Password" name="pass">
           <input class="button" type="submit" name="submit" value="Submit">

@@ -15,6 +15,7 @@
       $query = "INSERT INTO register (fullname,username,email,password)
       VALUES('".$fullname."','".$username."','".$email."','".$password."')";
       $result = $conn->query($query);
+      echo "Register Sucessfully";
     }
   }
 

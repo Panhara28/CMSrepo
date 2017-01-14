@@ -9,7 +9,7 @@ function Login($conn){
     if (empty($username&&$password)) {
       echo "Empty";
     }else{
-      $query = "SELECT * FROM register";
+      $query = "SELECT * FROM register WHERE username='$username' AND password='$password'";
       $result = mysqli_query($conn,$query);
       $user = mysqli_fetch_assoc($result);
       if ($_POST['user']==$user['username']) {
